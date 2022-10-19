@@ -37,10 +37,15 @@
     
     <main class="main-content  mt-0">
     <section>
-        <div class="page-header min-vh-100">
-            <div class="container">
+        <div class="w-100 pt-7" >
+            @yield('carrusel')
+        </div>
 
-            @yield('content')
+        <div class="page-header min-vh-100">
+
+
+            <div class="container">
+                @yield('content')
 
             </div>
         </div>
