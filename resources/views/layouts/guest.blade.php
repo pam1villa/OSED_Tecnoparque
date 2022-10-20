@@ -23,7 +23,7 @@
     {{-- Permite ingresar links de css, librerias, importacion... --}}
 
 </head>
-<body>
+<body class="bg-white">
 
     <div class="container position-sticky z-index-sticky top-0">
         <div class="row">

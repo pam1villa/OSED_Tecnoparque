@@ -17,13 +17,13 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{route('welcome')}}">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                     Inicio
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/profile.html">
+                  <a class="nav-link me-2" href="{{route('services')}}">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                     Servicios
                   </a>
@@ -39,7 +39,7 @@
               <ul class="navbar-nav d-lg-block d-none">
                 <li class="nav-item">
                   {{-- Como hacer para que en el href me redirija a login.php --}}
-                  <a href="../assets/css/argon-dashboard.css?v=2.0.4" class="btn btn-sm mb-0 me-1 btn-primary">Iniciar Sesión</a>
+                  <a href="{{route('login')}}" class="btn btn-sm mb-0 me-1 btn-primary">Iniciar Sesión</a>
                 </li>
               </ul>
             </div>
