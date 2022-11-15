@@ -2,10 +2,17 @@
 @section('carrusel')
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="page-header min-vh-75 m-3 border-radius-xl" style="background-image: url(' {{asset('img/welcome.png')}}')">
-          <span class="mask bg-gradient-dark"></span>
+        <div class="page-header min-vh-75 m-3 border-radius-xl" style="background-image: url(' {{asset('img/iniciosesion2.png')}}')">
+          <div class="mask"
+          style="background: linear-gradient(45deg,
+              rgba(2, 110, 153, 0.7),
+              rgba(34, 99, 152, 0.75) 100%
+            );"
+        >
+        </div>
 
           <div class="container">
             <div class="row">
@@ -13,15 +20,21 @@
                 <h4 class="text-white mb-0 fadeIn1 fadeInBottom">OSED</h4>
                 <h1 class="text-white fadeIn2 fadeInBottom">Profesionales en limpieza</h1>
                 <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.</p>
-                <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+                <a href="{{route('agendaServices')}}" class="btn btn-lg btn-info btn bg-gradient-info  mt-4 mb-0">Agenda ¡ Ya !</a>
               </div>
             </div>
           </div>
         </div>
       </div>
        <div class="carousel-item">
-        <div class="page-header min-vh-75 m-3 border-radius-xl" style="background-image: url(' {{asset('img/iniciosesion.png')}}')">
-          <span class="mask bg-gradient-dark"></span>
+        <div class="page-header min-vh-75 m-3 border-radius-xl" style="background-image: url(' {{asset('img/iniciosesion2.png')}}')">
+          <div class="mask"
+          style="background: linear-gradient(45deg,
+              rgba(2, 110, 153, 0.7),
+              rgba(34, 99, 152, 0.75) 100%
+            );"
+        >
+        </div>
 
           <div class="container">
             <div class="row">
@@ -29,7 +42,7 @@
                 <h4 class="text-white mb-0 fadeIn1 fadeInBottom">OSED</h4>
                 <h1 class="text-white fadeIn2 fadeInBottom">Desinfección</h1>
                 <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.</p>
-                <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+                <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
               </div>
             </div>
           </div>
@@ -37,7 +50,13 @@
       </div>
       <div class="carousel-item">
         <div class="page-header min-vh-75 m-3 border-radius-xl" style="background-image: url(' {{asset('img/iniciosesion2.png')}}')">
-          <span class="mask bg-gradient-dark"></span>
+          <div class="mask"
+          style="background: linear-gradient(45deg,
+              rgba(2, 110, 153, 0.7),
+              rgba(34, 99, 152, 0.75) 100%
+            );"
+        >
+        </div>
 
           <div class="container">
             <div class="row">
@@ -45,7 +64,7 @@
                 <h4 class="text-white mb-0 fadeIn1 fadeInBottom">OSED</h4>
                 <h1 class="text-white fadeIn2 fadeInBottom">Servicios confiables</h1>
                 <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.</p>
-                <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+                <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
               </div>
             </div>
           </div>
@@ -62,102 +81,259 @@
         <span class="visually-hidden">Next</span>
       </a>
     </div>
+
+    
   </div>
 
+@endsection
 
+@section('content')
+  <div class="row">
+    <div class="text-center">
+      <h2 class="text-info">Servicios</h2>
+      {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel elit eget erat rhoncus ornare et in nisi. Aliquam egestas, nulla sit amet dapibus efficitur, felis turpis maximus purus, et sollicitudin nisl augue non turpis.  </p> --}}
+    </div>
 
-  <div class="accordion-1">
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-md-6 mx-auto text-center">
-          <h2>Preguntas Frecuentes</h2>
-          <p>A lot of people don’t appreciate the moment until it’s passed. I'm not trying my hardest, and I'm not trying to do </p>
+    <div class="col-md-4 mt-4">
+        <div class="card bg-cover text-below" style="background-image: url(' {{asset('img/imgServices/ASPIRAR.png')}}')" >
+        <div class="card-body z-index-2 py-6 pt-10">
+            <h3 class="text-white">Limpieza a profundidad</h3>
+            <p class="text-white">
+                Si así lo consideras, incluye la limpieza de griferías, sanitarios y mamparas en profundidad. 
+            </p>
+            <a href="#" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">
+                Agenda  ¡ Ya !
+            </a>
+        </div>
+        <div class="mask border-radius-lg"  style="background: linear-gradient(45deg,
+              rgba(2, 110, 153, 0.7),
+              rgba(34, 99, 152, 0.75) 100%
+            );"></div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+        <div class="card bg-cover text-below" style="background-image: url(' {{asset('img/imgServices/planchado2.png')}}')" >
+        <div class="card-body z-index-2 py-6 pt-10">
+            <h3 class="text-white">Planchado</h3>
+            <p class="text-white">
+                Planchar la ropa ayuda a matar diferentes bacterias, ácaros y gérmenes que pueden esconderse entre las fibras de la tela. 
+            </p>
+
+            <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">
+                Agenda  ¡ Ya !
+            </button>
+
+        </div>
+        <div class="mask border-radius-lg"  style="background: linear-gradient(45deg,
+        rgba(2, 110, 153, 0.7),
+        rgba(34, 99, 152, 0.75) 100%
+      );"></div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mt-4">
+      <div class="card bg-cover text-below" style="background-image:  url(' {{asset('img/imgServices/desinfectar.jpg')}}')" >
+        <div class="card-body z-index-2 py-6 pt-10">
+            <h3 class="text-white"> Desinfección</h3>
+            <p class="text-white">
+                Una desinfección correcta y realizada por expertos puede ayudar a prevenir el contagio de cualquier virus, eliminando el 99%            </p>
+            <a href="#" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">
+                Agenda  ¡ Ya !
+            </a>       
+          </div>
+          <div class="mask border-radius-lg"  style="background: linear-gradient(45deg,
+          rgba(2, 110, 153, 0.7),
+          rgba(34, 99, 152, 0.75) 100%
+        );"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center">
+        <br><br> <br>
+        <h2 class="text-info">Nuestro equipo</h2>
+        {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel elit eget erat rhoncus ornare et in nisi. Aliquam egestas, nulla sit amet dapibus efficitur, felis turpis maximus purus, et sollicitudin nisl augue non turpis.  </p> --}}
+      </div>
+      <div class="col-md-4 mt-4">
+        <div class="card card-profile mt-md-0 mt-5">
+          <a href="javascript:;">
+            <div class="p-3">
+              <img class="w-100 border-radius-md" src="{{asset('img/imgAboutUs/Perfil1.png')}}">
+            </div>
+          </a>
+          <div class="card-body blur justify-content-center text-center mx-4 mb-4 border-radius-md">
+            <h4 class="mb-0">Nora Jimenez</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
+            <div class="row justify-content-center text-center">
+            <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
+    
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="accordion" id="accordionRental">
-            <div class="accordion-item mb-3">
-              <h5 class="accordion-header" id="headingOne">
-                <button class="accordion-button border-bottom font-weight-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  How do I order?
-                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                </button>
-              </h5>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
-                <div class="accordion-body text-sm opacity-8">
-                  We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game
-                  of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed.
-                </div>
-              </div>
+    
+      <div class="col-md-4 mt-4">
+        <div class="card card-profile mt-md-0 mt-5">
+          <a href="javascript:;">
+            <div class="p-3">
+              <img class="w-100 border-radius-md" src="{{asset('img/imgAboutUs/Perfil2.png')}}">
             </div>
-            <div class="accordion-item mb-3">
-              <h5 class="accordion-header" id="headingTwo">
-                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How can i make the payment?
-                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                </button>
-              </h5>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionRental">
-                <div class="accordion-body text-sm opacity-8">
-                  It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter. Because it's about motivating the doers. Because I’m here to follow my dreams and inspire other people to follow their dreams, too.
-                  <br>
-                  We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed.
-                </div>
-              </div>
+          </a>
+          <div class="card-body blur justify-content-center text-center mx-4 mb-4 border-radius-md">
+            <h4 class="mb-0">Camilo Gil</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
+            <div class="row justify-content-center text-center">
+            <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
+    
             </div>
-            <div class="accordion-item mb-3">
-              <h5 class="accordion-header" id="headingThree">
-                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How much time does it take to receive the order?
-                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                </button>
-              </h5>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionRental">
-                <div class="accordion-body text-sm opacity-8">
-                  The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?
-                  If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.
-                </div>
-              </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="col-md-4 mt-4">
+        <div class="card card-profile mt-md-0 mt-5">
+          <a href="javascript:;">
+            <div class="p-3">
+              <img class="w-100 border-radius-md" src="{{asset('img/imgAboutUs/Perfil3.png')}}">
             </div>
-            <div class="accordion-item mb-3">
-              <h5 class="accordion-header" id="headingFour">
-                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Can I resell the products?
-                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                </button>
-              </h5>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionRental">
-                <div class="accordion-body text-sm opacity-8">
-                  I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do anything. I was taught I could do everything.
-                  <br><br>
-                  If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item mb-3">
-              <h5 class="accordion-header" id="headingFifth">
-                <button class="accordion-button border-bottom font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
-                  Where do I find the shipping details?
-                  <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                  <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3" aria-hidden="true"></i>
-                </button>
-              </h5>
-              <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth" data-bs-parent="#accordionRental">
-                <div class="accordion-body text-sm opacity-8">
-                  There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.
-                  I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do anything. I was taught I could do everything.
-                </div>
-              </div>
+          </a>
+          <div class="card-body blur justify-content-center text-center mx-4 mb-4 border-radius-md">
+            <h4 class="mb-0">Tatiana Henao</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
+            <div class="row justify-content-center text-center">
+            <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
+    
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    
+
 @endsection
+
+
+@section('footer')
+
+  <footer class="bg-gradient-info text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="{{asset('img/logoOsedSidebar.png')}}" height="100" alt=""
+                  loading="lazy" />
+          </div>
+
+          <p class="text-center">Ofrecemos servicios de limpieza para empresas y hogares</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-white mb-4">Servicios</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-check-circle"></i>  Limpieza para hogares</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-check-circle"></i>  Limpieza para empresa</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-check-circle"></i>  Servicio de Desinfección</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-check-circle"></i>  Cocina</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-white mb-4">Ayuda</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-info-circle"></i>  Iniciar Sesión</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-info-circle"></i>  Registrarse</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-info-circle"></i>  Preguntas frecuentes</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-white mb-4">Contacto</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Colombia, Carrera 76, Medellin</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>contactosed@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © <script>
+        document.write(new Date().getFullYear())
+      </script>,
+      hecho con <i class="fa fa-heart"></i> por
+      <a href="#" class="text-white" target="_blank">Tecnoparque SENA</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+@endsection
+    
+
+  
+
+
+
+
+ 
+
+
+
+    

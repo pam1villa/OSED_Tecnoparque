@@ -42,14 +42,16 @@
         </div>
 
         <div class="page-header min-vh-100">
-
-
             <div class="container">
                 @yield('content')
-
             </div>
         </div>
     </section>
+
+    <div class="main-content pt-7 mt-0">
+        @yield('footer')
+    </div>
+
     </main>
     
         <!--   Core JS Files   -->
