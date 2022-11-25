@@ -13,7 +13,7 @@
         <h4 class="mb-0">Nora Jimenez</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>
@@ -31,7 +31,7 @@
         <h4 class="mb-0">Camilo Gil</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>
@@ -50,7 +50,7 @@
         <h4 class="mb-0">Tatiana Henao</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>
@@ -69,7 +69,7 @@
         <h4 class="mb-0">Tatiana Henao</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>
@@ -88,7 +88,7 @@
         <h4 class="mb-0">Nora Jimenez</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>
@@ -107,7 +107,7 @@
         <h4 class="mb-0">Nora Jimenez</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla eros at tincidunt auctor.</p>
         <div class="row justify-content-center text-center">
-        <button type="button" class="btn bg-gradient-primary">Agenda ¡ Ya !</button>
+        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info mt-4 mb-0">Agenda ¡ Ya !</button>
 
         </div>
       </div>

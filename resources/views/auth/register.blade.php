@@ -6,8 +6,14 @@
 
 
     <main class="main-content mt-0 ps">
-        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url(' {{asset('img/register1.png')}}')">
-          <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url(' {{asset('img/RegistoOsed.png')}}')">
+          <div class="mask"
+          style="background: linear-gradient(45deg,
+              rgba(2, 110, 153, 0.7),
+              rgba(34, 99, 152, 0.75) 100%
+            );"
+        >
+        </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-5 text-center mx-auto">
@@ -21,38 +27,38 @@
           <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
             <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
               <div class="card z-index-0">
-                <div class="card-header text-center pt-4">
-                  <button type="button" class="btn btn-outline-primary btn-lg w-100 mt-4 mb-0">Continua con Google</button>
-
-                </div>
-                <div class="row px-xl-5 px-sm-4 px-3">       
-                  <div class="mt-2 position-relative text-center">
-                    <p class="text-sm font-weight-bold mb-2 text-secondary text-border d-inline z-index-2 bg-white px-3">
-                      o registrate con:
-                    </p>
-                  </div>
-                </div>
-
+                
                 <div class="card-body">
                   <form role="form">
                     <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Nombre" aria-label="name">
+                      <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="name">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Telefono" aria-label="phone">
+                      <input type="text" class="form-control" placeholder="Cedula" aria-label="id">
                     </div>
                     <div class="mb-3">
                       <input type="email" class="form-control" placeholder="Correo Electronico" aria-label="email">
                     </div>
                     <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Telefono" aria-label="phone">
+                    </div>
+                    
+                    <div class="mb-3">
                       <input type="password" class="form-control" placeholder="Contraseña" aria-label="password">
                     </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Acepto los terminos y condiciones</label>
+                    </div>
                     <div class="text-center">
-                        <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Registrarme</button>
+                        <button type="button" class="btn btn-lg btn-primary btn bg-gradient-info w-100 mt-4 mb-0">Registrarme</button>
                     </div>                    
-                    <p class="text-sm mt-3 mb-0">¿Ya tienes una cuenta creada? <a href="{{route('login')}}" class="text-dark font-weight-bolder">Ingresar</a></p>
+                    <p class="text-sm mt-3 mb-0">¿Ya tienes una cuenta creada? <a href="{{route('login')}}" class="text-info text-gradient font-weight-bold">Ingresar</a></p>
+                    <button type="button" class="btn btn-outline-info btn-lg btn-lg w-100 mt-4 mb-0">Continua con Google</button>
                   </form>
                 </div>
+              
+                
               </div>
             </div>
           </div>
