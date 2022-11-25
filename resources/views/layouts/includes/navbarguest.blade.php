@@ -48,7 +48,8 @@
                @endguest
                @auth
                   <li class="nav-item">
-                    <a href="{{route('dashboard')}}" class="btn btn-sm mb-0 me-1 btn-outline-info">Ir a inicio</a>
+                    <a href="/dashboard" class="btn btn-sm mb-0 me-1 btn-outline-info">Regresar</a>
+                    {{-- <a href="{{route('dashboard')}}" class="btn btn-sm mb-0 me-1 btn-outline-info">Ir a inicio</a> --}}
                   </li>
                @endauth
               </ul>

@@ -1,0 +1,105 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\Http\Request;
+
+class userController extends Controller
+{
+    public function index()
+    {
+        $users = User::all();
+        return view('Users.index', compact('users'));
+        // ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    public function create()
+    {
+        return view('Users.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        // $request->validate([
+        //     'name' => 'required',
+        //     'detail' => 'required',
+        // ]);
+
+        User::create($request->all());
+
+
+        //todo: autenticar -> redirige
+
+        return redirect()->route('dashboard')
+            ->with('success', 'Usuario creado correctamente');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Product  $product
+     * @return \Illuminate\Http\Response
+     */
+    public function show(User $users)
+    {
+        return view('Users.show', compact('users'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit($id)
+    {
+        $user = User::find($id);
+        return view('Users.edit', compact('user'));
+    }
+
+
+    //----------------Función para Actualizar---------------------------
+    public function update(Request $request, $id)
+    {
+        // $request->validate([
+        //     'name' => 'required',
+        //     'detail' => 'required',
+        // ]);
+
+
+            
+        
+        $user = User::find($id);
+        $user->update($request->all());
+        
+
+        return redirect('/users'); //usar el nombre de la ruta
+
+        // $users = User::all();
+        // return view('Users.index', compact('users'));
+
+
+        
+
+        // ->with('success', 'Product updated successfully');
+    }
+
+    //----------------Función para eliminar---------------------------
+    public function delete($id)
+    {
+        $deleteuser = User::FindOrFail($id);
+        $deleteuser->delete();
+        return redirect('/users');
+    }
+
+
+    public function test()
+    {
+        // return view('layouts.users.index', compact('users'));
+        return view('layouts.users.prueba');
+    }
+}

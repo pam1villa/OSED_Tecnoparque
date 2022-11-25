@@ -3,8 +3,6 @@
 @section('content')
 
 <div class="row">
-
-
     <main class="main-content mt-0 ps">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url(' {{asset('img/RegistoOsed.png')}}')">
           <div class="mask"
@@ -17,8 +15,8 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-5 text-center mx-auto">
-                <h1 class="text-white mb-2 mt-5">¡Crea tu cuenta!</h1>
-                <p class="text-lead text-white">A continuación entrarás a el mundo OSED, donde podrás programar los servicios con los que contamos y nuestros profesionales de limpieza</p>
+                <h1 class="text-white mb-2 mt-5">Agregar Empleado</h1>
+                {{-- <p class="text-lead text-white">A continuación entrarás a el mundo OSED, donde podrás programar los servicios con los que contamos y nuestros profesionales de limpieza</p> --}}
               </div>
             </div>
           </div>
@@ -29,7 +27,7 @@
               <div class="card z-index-0">
                 
                 <div class="card-body">
-                  <form method="POST" action="{{route('registeruser')}}" role="form">
+                  <form method="POST" action="{{route('registerpersonal')}}" role="form">
                     @csrf
 
 
@@ -76,8 +74,6 @@
 
 
 </div>
-
-
 
 
 @endsection

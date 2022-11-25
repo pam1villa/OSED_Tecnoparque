@@ -3,8 +3,6 @@
 @section('content')
 
 <div class="row">
-
-
     <main class="main-content mt-0 ps">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url(' {{asset('img/RegistoOsed.png')}}')">
           <div class="mask"
@@ -76,8 +74,6 @@
 
 
 </div>
-
-
 
 
 @endsection

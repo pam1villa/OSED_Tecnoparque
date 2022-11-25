@@ -13,7 +13,7 @@
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             </div>
             <ul class="navbar-nav  justify-content-end">
-              <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              {{-- <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                   <div class="sidenav-toggler-inner">
                     <i class="sidenav-toggler-line bg-white"></i>
@@ -22,20 +22,21 @@
                   </div>
                 </a>
               </li>
-              
+               --}}
               <li class="nav-item dropdown pe-2 d-flex align-items-center">
-                <a href="javascript:;" class="dropdown-toggle nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="avatar avatar-sm  me-2 border">
-                    <i class="fa fa-user"></i>
-                  </div>
-                  <span>{{Auth::user()->name}}</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="{{route('logout')}}">Cerrar sesión</a></li>
-                </ul>       
+                <div class="dropdown">
+                  <button class="btn bg-gradient-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>{{Auth::user()->name}}</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="{{route('logout')}}">Cerrar sesión</a></li>
+                  </ul>
+                </div>
               </li>
-
             </ul>
           </div>
         </div>
       </nav>
+
+
+      

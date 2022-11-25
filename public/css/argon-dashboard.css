@@ -26933,4 +26933,8 @@ pre[class*="language-"] {
   }
 }
 
+.sidenav{
+  overflow-y: hidden !important;
+}
+
 /*# sourceMappingURL=dashboard-free.css.map */

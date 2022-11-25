@@ -30,77 +30,71 @@
                 <div class="card">
                   <div class="card-header pb-0">
                     <div class="d-flex align-items-center">
-                      <p class="mb-0">Programa tu servicio</p>
+                      <p class="mb-0"> ¿Es correcto a quien es el titular del servicio? </p>
                         <button type="button" class=" btn bg-gradient-info btn-sm ms-auto">Continuar</button>
                     </div>
                   </div>
                   <div class="card-body">
+                    <form method="POST" action="{{route('agendaServices')}}" role="form">
+                      @csrf
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group">
                           <label for="example-text-input" class="form-control-label">Nombre</label>
-                          <input class="form-control" type="text" value="Cristina Restrepo Gonzales">
+                          <input class="form-control" type="text" placeholder="Pendiente conectar esto con el nombre del usuario logueado"  aria-label="name" name="name">
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="example-text-input" class="form-control-label">Telefono</label>
+                          <input class="form-control" type="tel" value="40-(770)-888-444" id="example-tel-input" name="name">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
                         <div class="form-group">
                           <label for="example-text-input" class="form-control-label">Correo Electronico</label>
-                          <input class="form-control" type="email" value="cisti@gmail.com">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">First name</label>
-                          <input class="form-control" type="text" value="Jesse">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">Last name</label>
-                          <input class="form-control" type="text" value="Lucky">
+                          <input class="form-control" type="email" placeholder="correo_@gmail.com">
                         </div>
                       </div>
                     </div>
                     <hr class="horizontal dark">
-                    <p class="text-uppercase text-sm">Contact Information</p>
+                    <p class="mb-0">¡Ingresa/Completa los siguientes datos para agendar tu servicio OSED!</p>
+                    <br>
                     <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">Address</label>
-                          <input class="form-control" type="text" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                          <label for="exampleFormControlSelect1">Selecciona el servicio:</label>
+                            <select class="form-control" id="exampleFormControlSelect1" value="..." name="services" >
+                                <option>Limpieza a profundidad</option>
+                                <option>Desinfección</option>
+                                <option>Lavado de ropa</option>
+                                <option>Desinfección</option>
+                            </select>
+                          {{-- <label for="example-text-input" class="form-control-label">Selecciona el servicio:</label>
+                          <input class="form-control" type="text" placeholder="servicio" aria-label="services" name="services"> --}}
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">City</label>
-                          <input class="form-control" type="text" value="New York">
+                          <label for="example-text-input" class="form-control-label">Duración del servicio (en horas)</label>
+                          <input class="form-control" type="time" value="10:30:00" id="example-time-input" name="services">
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">Country</label>
-                          <input class="form-control" type="text" value="United States">
+                          <label for="example-text-input" class="form-control-label">Dirección donde se prestará el servicio:</label>
+                          <input class="form-control" type="text" value="cra 54 #34-56" name="services">
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">Postal code</label>
-                          <input class="form-control" type="text" value="437300">
-                        </div>
-                      </div>
-                    </div>
-                    <hr class="horizontal dark">
-                    <p class="text-uppercase text-sm">About me</p>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="example-text-input" class="form-control-label">About me</label>
-                          <input class="form-control" type="text" value="A beautiful Dashboard for Bootstrap 5. It is Free and Open Source.">
+                          <label for="example-text-input" class="form-control-label">Fecha del servicio:</label>
+                          <input class="form-control" type="date" value="2018-11-23" id="example-date-input" name="services">
                         </div>
                       </div>
                     </div>
                   </div>
-               
+                </form>
               </div>
             </div>
             <footer class="footer pt-3  ">
@@ -113,27 +107,12 @@
                       </script>,
                       hecho con <i class="fa fa-heart"></i> por
                       <a href="#" class="font-weight-bold" target="_blank">Tecnoparque SENA</a>
-
                     </div>
                   </div>
                 </div>
               </div>
             </footer>
           </div>
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
 
 @endsection
