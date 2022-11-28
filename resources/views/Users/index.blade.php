@@ -31,8 +31,7 @@
           
             <td>
                 <p class="text-xs font-weight-bold mb-0">CC</p>
-                <p class="text-xs font-weight-bold mb-0">123456789</p>
-                {{-- <span class="text-xs text-secondary mb-0"> {{  $user->cedula }} </span> --}}
+                <span class="text-xs text-secondary mb-0"> {{  $user->cedula }} </span> 
             </td>
 
             <td class="align-middle text-center text-sm">
@@ -40,8 +39,7 @@
             </td>
 
             <td class="align-middle text-center">
-                {{-- <span class="text-secondary text-xs font-weight-bold">{{  $user->phone }}</span> --}}
-                <p class="text-xs font-weight-bold mb-0">3245007896</p>
+                 <span class="text-secondary text-xs font-weight-bold">{{  $user->phone }}</span> 
             </td>
 
             <td class="align-middle">

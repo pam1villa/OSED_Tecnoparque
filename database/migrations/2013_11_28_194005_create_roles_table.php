@@ -13,16 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('cedula');
-            $table->string('email')->unique();
-            $table->string('phone');
-            $table->string('password');
-            $table->unsignedBigInteger('idRol'); // Recordar camelCase
             $table->timestamps();
-            $table->foreign('idRol')-> references('id')->on('roles');
         });
     }
 
@@ -33,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('roles');
     }
 };

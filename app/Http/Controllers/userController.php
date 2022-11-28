@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class userController extends Controller
 {
@@ -31,12 +32,16 @@ class userController extends Controller
         //     'name' => 'required',
         //     'detail' => 'required',
         // ]);
+        // dd ( $request->post());
+        //ENCRIPTADO:
+        $data = ($request ->all());
+        $password = Hash::make($request -> password);
+        $data ['password'] = $password;
+        $data ['idRol'] = 1;
+        User::create($data);
 
-        User::create($request->all());
 
-
-        //todo: autenticar -> redirige
-
+        //todo: autenticar -> redirige:
         return redirect()->route('dashboard')
             ->with('success', 'Usuario creado correctamente');
     }
