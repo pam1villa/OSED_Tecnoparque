@@ -57,11 +57,11 @@
           <div class="docs-info">
             <br>
 
-            <h6 class="mb-0">¿Necesitas ayuda?</h6>
+            {{-- <h6 class="mb-0">¿Necesitas ayuda?</h6>
             <p class="text-xs font-weight-bold mb-0">Apartado de preguntas frecuentes</p>
             <br>
           </div>
-          <button type="button" class="btn btn-outline-info btn-sm w-90 mb-5">Ver Documentación</button>
+          <button type="button" class="btn btn-outline-info btn-sm w-90 mb-5">Ver Documentación</button> --}}
 
         </div>
       </div>
