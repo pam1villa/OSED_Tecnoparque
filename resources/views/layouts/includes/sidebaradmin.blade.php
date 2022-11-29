@@ -42,6 +42,14 @@
             <span class="nav-link-text ms-1">Empleados</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{route('indexUser')}}">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fa fa-briefcase text-info text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Empresas</span>
+          </a>
+        </li>
         <hr class="horizontal dark mt-3">
         <li class="nav-item">
           <a class="nav-link " href="{{route('profile')}}"> 

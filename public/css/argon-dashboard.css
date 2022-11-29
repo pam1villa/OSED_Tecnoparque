@@ -9959,7 +9959,7 @@ fieldset:disabled .btn {
 }
 
 .p-4 {
-  padding: 1.5rem !important;
+  padding: 1rem !important;
 }
 
 .p-5 {
@@ -10153,7 +10153,7 @@ fieldset:disabled .btn {
 }
 
 .pt-7 {
-  padding-top: 6rem !important;
+  padding-top: 0rem !important;
 }
 
 .pt-8 {
@@ -22282,7 +22282,7 @@ hr.horizontal.gray-light {
 }
 
 .card.card-profile-bottom {
-  margin-top: 15rem;
+  margin-top: 2rem;
 }
 
 .navbar {

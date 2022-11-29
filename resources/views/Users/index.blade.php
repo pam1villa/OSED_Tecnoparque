@@ -1,9 +1,30 @@
 @extends('layouts.app')
 
+
 @section('content')
-<div class="text-center">
+{{-- <div class="text-center">
     <h2 style="color:#0078B8">Empleados Registrados OSED</h2>
 </div>
+<br> --}}
+<div class="card shadow-lg  card-profile-bottom">
+    <div class="card-body p-3">
+      <div class="row gx-4">
+        <div class="col-auto">
+          
+        </div>
+        <div class="col-auto my-auto">
+          <div class="h-100">
+            <h5 class="mb-1">
+              Usuarios Registrados
+            </h5>
+            <p class="mb-0 font-weight-bold text-sm">
+              OSED
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <br>
 <div class="card">
     <div class="table-responsive">
@@ -62,49 +83,22 @@
 
 @endsection
 
-
-{{-- <div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Add New Product</h2>
-        </div>
-        <div class="pull-right">
-            //<a class="btn btn-primary" href="{{ route('Users.index') }}"> Back</a> 
-        </div>
-    </div>
-</div>
-   
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <strong>Whoops!</strong> There were some problems with your input.<br><br>
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
-   
-//<form action="{{ route('products.store') }}" method="POST"> 
-    <form action="{{}}" method="POST">
-    @csrf
-  
-     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name">
+@section('footer')
+<div class="container-fluid py-4">
+    <footer class="footer pt-3  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+              © <script>
+                document.write(new Date().getFullYear())
+              </script>,
+              hecho con <i class="fa fa-heart"></i> por
+              <a href="#" class="font-weight-bold" target="_blank">Tecnoparque SENA</a>
             </div>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Detail:</strong>
-                <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-   
-</form> --}}
+      </div>
+    </footer>
+  </div>
+@endsection

@@ -50,7 +50,8 @@
     <main class="main-content position-relative border-radius-lg ">
         @include('layouts.includes.navbar')
         <!-- End Navbar -->
-        <div class="container-fluid py-4">
+
+        <div class="container-fluid py-2">
             @yield('content')
         </div>
         <div class="w-100 pt-7" >
@@ -58,8 +59,8 @@
         </div>
         <div class="container-fluid py-4">
             @yield('form-edit')
-    </div>
-        <div class="main-content pt-7 mt-0">
+        </div>
+        <div class="main-content pt-8 mt-0">
             @yield('footer')
         </div>
 

@@ -1,9 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="text-center">
-    <h2 style="color:#0078B8">Servicios Agendados OSED</h2>
-</div>
+<div class="card shadow-lg  card-profile-bottom">
+    <div class="card-body p-3">
+      <div class="row gx-4">
+        <div class="col-auto">
+          
+        </div>
+        <div class="col-auto my-auto">
+          <div class="h-100">
+            <h5 class="mb-1">
+              Servicios Agendados
+            </h5>
+            <p class="mb-0 font-weight-bold text-sm">
+              OSED
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <br>
 
   <div class="card">
@@ -349,6 +365,26 @@
     </div>
   </div>
 
+@endsection
+
+@section('footer')
+<div class="container-fluid py-4">
+    <footer class="footer pt-3  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+              © <script>
+                document.write(new Date().getFullYear())
+              </script>,
+              hecho con <i class="fa fa-heart"></i> por
+              <a href="#" class="font-weight-bold" target="_blank">Tecnoparque SENA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 @endsection
 
 
