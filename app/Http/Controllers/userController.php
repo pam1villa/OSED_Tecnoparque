@@ -8,23 +8,21 @@ use Illuminate\Support\Facades\Hash;
 
 class userController extends Controller
 {
+    //----------------Función para Mostrar los datos almacenados en la BD---------------------------
     public function index()
     {
         $users = User::all();
         return view('Users.index', compact('users'));
         // ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-
+    //----------------Función para redirigir al formulario---------------------------
     public function create()
     {
         return view('Users.create');
     }
-
+    //----------------Función para crear en BD---------------------------
     /**
      * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -48,9 +46,6 @@ class userController extends Controller
 
     /**
      * Display the specified resource.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
      */
     public function show(User $users)
     {
@@ -75,21 +70,13 @@ class userController extends Controller
         //     'detail' => 'required',
         // ]);
 
-
-            
-        
         $user = User::find($id);
         $user->update($request->all());
         
-
         return redirect('/users'); //usar el nombre de la ruta
 
         // $users = User::all();
         // return view('Users.index', compact('users'));
-
-
-        
-
         // ->with('success', 'Product updated successfully');
     }
 

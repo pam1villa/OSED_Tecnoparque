@@ -1,9 +1,7 @@
 @extends('layouts.guest')
-
 @section('content')
 
 <div class="row">
-
 
     <main class="main-content mt-0 ps">
         <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url(' {{asset('img/RegistoOsed.png')}}')">
@@ -31,14 +29,10 @@
                 <div class="card-body">
                   <form method="POST" action="{{route('registeruser')}}" role="form">
                     @csrf
-
-
                     {{-- <form method="POST" action="/profile">
                    
                       ...
                   </form> --}}
-
-
                     <div class="mb-3">
                       <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="name" name="name">
                     </div>
@@ -66,18 +60,11 @@
                     <button type="button" class="btn btn-outline-info btn-lg btn-lg w-100 mt-4 mb-0">Continua con Google</button>
                   </form>
                 </div>
-              
-                
               </div>
             </div>
           </div>
         </div>
       <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></main>
-
-
 </div>
-
-
-
 
 @endsection

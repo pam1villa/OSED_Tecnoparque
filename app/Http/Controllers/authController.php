@@ -25,21 +25,15 @@ class authController extends Controller
                 ])->onlyInput('email');
            }
         } catch ( Exception $e) {
-            dd($e);
+                dd($e);
         }
-
-    //   
-
     }
 
     public function logout(Request $request)
     {
         Auth::logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
         return redirect('/');
     }
 }
