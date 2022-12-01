@@ -1,4 +1,6 @@
-@extends('dashboard')
+{{-- ------------------------------Pendiente modificación para indexar un solo registro---------------------------------------------- --}}
+
+{{-- @extends('dashboard')
   
 @section('show')
     <div class="row">
@@ -26,7 +28,7 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}
 
 
 

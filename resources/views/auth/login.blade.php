@@ -1,5 +1,4 @@
 @extends('layouts.guest')
-
 @section('content')
 
 <div class="row">
@@ -7,7 +6,6 @@
       <div class="card card-plain">
         <div class="card-header pb-0 text-start">
           <h1 class="font-weight-bolder">Iniciar Sesión</h1>
-          
           <h5>Ingresa a el mundo de la limpieza </h5>
         </div>
 
