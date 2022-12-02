@@ -45,7 +45,7 @@ Route::get('/CrearServicioFlotante', [indexController::class, 'CrearServicioFlot
 Route::get('User/delete/{id}', [userController::class, 'delete'])->name('deleteUser');
 Route::get('/Users/edit/{id}', [userController::class, 'edit'])->name('editUser');
 Route::put('/Users/edit/{id}', [userController::class, 'update'])->name('updateBDUser');
-Route::get('/users', [userController::class, 'index'])->name('indexUser')->middleware(['auth']);
+Route::get('/users', [userController::class, 'index'])->name('indexUser')->middleware(['auth', 'checkRol:administrador-superAdministrador']);
 Route::post('/registeruser', [userController::class, 'store'])->name('registeruser');
 
 //----------------------Acciones Personal OSED------------------------

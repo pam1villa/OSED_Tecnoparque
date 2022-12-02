@@ -14,6 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //LLama desde el archivo en el que estoy a la clase del modelo correspondiente cuando se enjucuta la migración con seeder.
+        $this->call(rolesSeeder::class);
+        $this->call(userSeeder::class);
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

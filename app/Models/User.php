@@ -44,4 +44,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //Funcion para utilizar en la vista .
+    public function checkRole($id, $rol)
+    {
+        $roleUser = Roles::find($id);
+
+        // dd($id);
+        if ($roleUser) {
+            return strcmp($roleUser->name, $rol )  === 0 ;
+        }
+        return false;
+    }
 }
