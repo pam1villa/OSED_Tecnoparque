@@ -123,27 +123,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {{--------------------------Pendiente agregar footer------------------------------------
  @section('footer')
 <footer class="footer pt-3  ">

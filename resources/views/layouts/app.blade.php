@@ -40,13 +40,18 @@
             margin-bottom: 5rem !important;
         }
     </style>
-
+{{-- -------------------------------------------------------------------------------------------------------------------------        --}}
 
 </head>
 
 <body class="g-sidenav-show   bg-gray-100">
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
-    @include('layouts.includes.sidebaradmin')
+    @usuario 
+        @include('layouts.includes.sidebar')
+    @else
+        @include('layouts.includes.sidebaradmin') 
+    @endusuario
+    {{-- @dd(Auth::user()->checkRole(3, 'usuario')) --}}
     <main class="main-content position-relative border-radius-lg ">
         @include('layouts.includes.navbar')
         <!-- End Navbar -->

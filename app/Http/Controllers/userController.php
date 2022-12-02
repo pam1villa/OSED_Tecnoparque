@@ -35,7 +35,7 @@ class userController extends Controller
         $data = ($request ->all());
         $password = Hash::make($request -> password);
         $data ['password'] = $password;
-        $data ['idRol'] = 1;
+        $data ['idRol'] = 3;
         User::create($data);
 
 
